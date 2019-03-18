@@ -81,8 +81,18 @@ class FlickrCollectionViewDataSource<T: UICollectionViewCell & FlickrViewCellPro
             
             let flickrPhoto = photosDataController.photos[photoIndex]
             
+            photosDataController.fetchImage(for: flickrPhoto) { (flickrImage) in
+                DispatchQueue.main.async {
+                    if indexPath == collectionView.indexPath(for: cell) {
+                        flickrCell.setImage(flickrImage)
+                    }
+                }
+            }
+            
+            /*
             let flickrPhotoRequest = StaticAPIRequest.init(host: "farm\(flickrPhoto.farm).static.flickr.com", path: "/\(flickrPhoto.server)/\(flickrPhoto.id)_\(flickrPhoto.secret).jpg")
             
+//            photosDataController.fetchImage(for: flick)
             photosDataController.networkService.sendRequest(request: flickrPhotoRequest) { (response) in
                 switch response {
                 case .data(let anyData):
@@ -103,6 +113,7 @@ class FlickrCollectionViewDataSource<T: UICollectionViewCell & FlickrViewCellPro
                     break
                 }
             }
+ */
         }
     }
     

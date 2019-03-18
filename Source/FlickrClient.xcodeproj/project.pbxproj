@@ -21,6 +21,7 @@
 		6F2BC42E223ED82F002A4B1B /* FlickPhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BC42D223ED82F002A4B1B /* FlickPhotosResponse.swift */; };
 		6F2BC431223EDC22002A4B1B /* FlickrPhotosDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BC430223EDC22002A4B1B /* FlickrPhotosDataController.swift */; };
 		6F2BC433223EE5E5002A4B1B /* StaticAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BC432223EE5E5002A4B1B /* StaticAPIRequest.swift */; };
+		6F2BC436223F381D002A4B1B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2BC435223F381D002A4B1B /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		6F2BC42D223ED82F002A4B1B /* FlickPhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickPhotosResponse.swift; sourceTree = "<group>"; };
 		6F2BC430223EDC22002A4B1B /* FlickrPhotosDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosDataController.swift; sourceTree = "<group>"; };
 		6F2BC432223EE5E5002A4B1B /* StaticAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticAPIRequest.swift; sourceTree = "<group>"; };
+		6F2BC435223F381D002A4B1B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		6F2BC402223EA5E5002A4B1B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6F2BC434223F3809002A4B1B /* Cache */,
 				6F2BC42A223ED151002A4B1B /* APIService */,
 				6F2BC408223EBACA002A4B1B /* Network */,
 			);
@@ -203,6 +206,14 @@
 			path = DataController;
 			sourceTree = "<group>";
 		};
+		6F2BC434223F3809002A4B1B /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				6F2BC435223F381D002A4B1B /* ImageCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +295,7 @@
 				6F2BC401223EA5BE002A4B1B /* FlickrSearchViewController.swift in Sources */,
 				6F2BC431223EDC22002A4B1B /* FlickrPhotosDataController.swift in Sources */,
 				6F2BC421223EC9A3002A4B1B /* NetworkManagerProtocol.swift in Sources */,
+				6F2BC436223F381D002A4B1B /* ImageCache.swift in Sources */,
 				6F2BC3EE223EA4F2002A4B1B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
