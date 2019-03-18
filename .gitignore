@@ -1,0 +1,4 @@
+*.DS_Store
+
+Source/FlickrClient.xcodeproj/xcuserdata
+Source/FlickrClient.xcodeproj/project.xcworkspace
