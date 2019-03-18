@@ -39,6 +39,8 @@ class FlickrCollectionViewCell: UICollectionViewCell {
             NSLayoutConstraint.init(item: activityIndicator, attribute: .centerX, relatedBy: .equal, toItem: self.contentView, attribute: .centerX, multiplier: 1.0, constant: 0.0),
             NSLayoutConstraint.init(item: activityIndicator, attribute: .centerY, relatedBy: .equal, toItem: self.contentView, attribute: .centerY, multiplier: 1.0, constant: 0.0)
             ])
+        
+        activityIndicator.startAnimating()
     }
     
     override func prepareForReuse() {
