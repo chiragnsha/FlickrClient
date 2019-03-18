@@ -17,8 +17,10 @@ A simple iOS Client app to search images on Flickr.
 
 ## Things To Do
 
-1. ImageCache
-2. Cancel URLRequest for cells leaving view
+- [x] ImageCache
+- [ ] Cancel URLRequest for cells leaving view
+- [ ] Better Error Handling
+- [ ] Readable APIEndPoints
 
 
 
